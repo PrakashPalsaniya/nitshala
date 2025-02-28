@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import DownloadCard from "./components/DownloadCard";
+import Footer from "./components/Footer";
+
 
 export default function Home() {
   // Papers Data
@@ -13,6 +15,10 @@ export default function Home() {
     { title: "Software Engineering", branch: "IT", sem: "6", filename: "software_engineering.pdf", size: "2.9 MB", downloadLink: "/files/software_engineering.pdf" },
     { title: "Computer Networks", branch: "CS", sem: "5", filename: "computer_networks.pdf", size: "3.7 MB", downloadLink: "https://drive.google.com/uc?export=download&id=1WgIowldxF95WEH2pD3SPMW2TIEfWjlP7"
  },
+ { title: "Data Structures", branch: "CHE", sem: "1", filename: "data_structures.pdf", size: "3.2 MB", downloadLink: "/files/data_structures.pdf" },
+ { title: "Data Structures", branch: "MEC", sem: "2", filename: "data_structures.pdf", size: "3.2 MB", downloadLink: "/files/data_structures.pdf" },
+ { title: "Data Structures", branch: "CS", sem: "7", filename: "data_structures.pdf", size: "3.2 MB", downloadLink: "/files/data_structures.pdf" },
+ { title: "Data Structures", branch: "MTE", sem: "8", filename: "data_structures.pdf", size: "3.2 MB", downloadLink: "/files/data_structures.pdf" },
   ];
 
   // State for filters
@@ -70,7 +76,7 @@ export default function Home() {
             <p className="text-center text-gray-500">No papers found for selected filters.</p>
           )}
         </div>
-      </div>
+     <Footer/> </div>
     </div>
   );
 }

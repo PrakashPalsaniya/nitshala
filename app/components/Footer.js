@@ -12,9 +12,9 @@ const Footer = () => {
 
         {/* Middle Section - Quick Links */}
         <div className="flex space-x-4 text-sm">
-          <a href="/" className="hover:text-yellow-400 transition">Home</a>
-          <a href="/" className="hover:text-yellow-400 transition">Previous Papers</a>
-          <a href="/about" className="hover:text-yellow-400 transition">About</a>
+          <Link href="/" className="hover:text-yellow-400 transition">Home</Link>
+          <Link href="/" className="hover:text-yellow-400 transition">Previous Papers</Link>
+          <Link href="/about" className="hover:text-yellow-400 transition">About</Link>
         </div>
 
         {/* Right Section - Socials */}

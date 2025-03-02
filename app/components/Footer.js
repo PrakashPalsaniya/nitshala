@@ -1,4 +1,5 @@
 import { Linkedin, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 px-4 py-4 mt-10">
@@ -17,15 +18,15 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Socials */}
-        <div className="flex space-x-3 mt-3 md:mt-0 text-lg">
+        <div className="flex space-x-3 mt-3 md:mt-2 text-lg">
         {/* Social Media Icons */}
-<div className="flex justify-center space-x-6 mt-4">
-  <a href="https://www.linkedin.com/in/prakash-palsaniya" target="_blank" rel="noopener noreferrer">
-    <Linkedin className="w-6 h-6 text-blue-400 hover:text-[#38BDF8] transition-all" />
-  </a>
-  <a href="https://wa.me/918290682001" target="_blank" rel="noopener noreferrer">
-    <MessageCircle className="w-6 h-6 text-green-400 hover:text-[#38BDF8] transition-all" />
-  </a>
+<div className="flex justify-center space-x-6">
+  <Link href="https://www.linkedin.com/in/prakash-palsaniya" target="_blank" rel="noopener noreferrer">
+    <Linkedin className="w-5 h-5 text-blue-400 hover:text-[#38BDF8] transition-all" />
+  </Link>
+  <Link href="https://wa.me/918290682001" target="_blank" rel="noopener noreferrer">
+    <MessageCircle className="w-5 h-5 text-green-400 hover:text-[#38BDF8] transition-all" />
+  </Link>
 </div>
 
         </div>

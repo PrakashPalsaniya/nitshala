@@ -29,7 +29,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-800 p-4 mt-2 rounded-lg">
           <Link href="/" className="block py-2 text-gray-300 hover:text-yellow-400 transition">Home</Link>
-          <Link href="/" className="block py-2 text-gray-300 hover:text-yellow-400 transition">Notes</Link>
+          <Link href="/notes" className="block py-2 text-gray-300 hover:text-yellow-400 transition">Notes</Link>
           <Link href="/about" className="block py-2 text-gray-300 hover:text-yellow-400 transition">About</Link>
         </div>
       )}
